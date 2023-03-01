@@ -1,0 +1,13 @@
+version: '3'
+services:
+  ContCompose:
+      container_name: ContCompose
+      image: pract2mod2
+      build:
+        context: ./
+        dockerfile: dockerfile
+      volumes:
+        - .:/app
+      ports:
+       - 5000:8080
+
